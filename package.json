@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "front:serve": "cd resources/scripts && yarn build --watch",
+        "front:build": "cd resources/scripts && yarn build",
+        "serve": "concurrently \"php artisan serve --port=8000\" \"yarn front:serve\"",
+        "format": "prettier --write resources/scripts/**/*.{js,jsx,ts,tsx}"
+    },
+    "devDependencies": {
+        "concurrently": "^8.0.1",
+        "prettier": "^2.8.8"
+    }
+}
